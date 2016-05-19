@@ -1,0 +1,36 @@
+body, html{
+    margin:0;
+    padding:0;
+}
+
+
+
+
+
+
+
+
+#container{
+    background:#FFF;
+    width:100%;
+    height:100vh;
+    position: absolute;
+    top:98px;
+    left:0;
+    z-index: 1;
+    padding-top: 20px;
+}
+
+#searchedit{
+    position: absolute;
+    top:130px;
+    right:30px;
+}
+
+.messageform textarea, .dismissalform textarea{
+    width:90%;
+    height:4em;
+}
+.dismissalform input[type='range']{
+    vertical-align: middle;
+}

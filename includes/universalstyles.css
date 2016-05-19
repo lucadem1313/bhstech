@@ -1,0 +1,13 @@
+#container{
+    background: #F5F5F5;
+    height:auto;
+    min-height: 100vh;
+    overflow: visible;
+    position: static;
+    margin-top:98px;
+    padding-bottom: 150px;
+    min-width:630px;
+}
+.material-icons{
+    cursor: pointer;
+}

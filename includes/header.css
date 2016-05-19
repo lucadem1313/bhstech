@@ -1,0 +1,154 @@
+header{
+    width:100%;
+    height: 100px;
+    background: #1598e6;
+/*    border-bottom:6px rgba(0,0,0,0.1) solid;
+*/    z-index: 9999;
+    position: fixed;
+    top:0;
+    left:0;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+header h1, header a{
+    font:35px "Roboto", sans-serif;
+    color:#FFF;
+    text-decoration: none;
+}
+header h1{
+    
+    float:left;
+    margin-left: 20px;
+    margin-top:24px;
+}
+nav ul, nav li{
+    margin:0;
+    padding: 0;
+    list-style-type: none;
+    margin-top: 15px;
+}
+nav ul{
+    float: right;
+}
+nav li{
+    display: inline-block;
+    margin-right: 50px;
+}
+nav a, nav li{
+    font:27px "Roboto", sans-serif;
+    color:#FFF;
+    text-decoration: none;
+    cursor:pointer;
+}
+nav a:hover{
+    color:#FFF;
+    text-decoration: underline;
+}
+
+.down-arrow{
+    border: 10px transparent solid;
+    border-top:10px #FFF solid;
+    vertical-align: middle;
+    border-bottom: 0px transparent solid;
+    margin-left: 15px;
+    display: inline-block;
+}
+.dropdown{
+    font:20px "Roboto", "Lato", sans-serif;
+    position: absolute;
+    top:55px;
+    right:50px;
+    background:#FFF;
+    color:#000;
+    padding:0;
+    
+
+    border-radius: 2px;
+    
+    -webkit-box-shadow: 0px 0px 24px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 24px -5px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 24px -5px rgba(0,0,0,0.75);
+
+    overflow:hidden;
+    
+/*    height: 0px;*/
+    opacity:0;
+}
+.dropdown a{
+    font-size: 25px;
+    color:#000;
+}
+.dropdown li{
+    display:block;
+    color:#000;
+    line-height: 1.8em;
+    padding: 0px;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 26px;
+    transition:background 0.2s;
+    text-align: right;
+    cursor: pointer;
+}
+.dropdown li:hover{
+    background: lightgrey;
+}
+.dropdown .material-icons{
+    font-size: 30px;
+    vertical-align: middle;
+    margin-top: 2px;
+    margin-right: 20px;
+    float: left;
+    transition: all 0.2s;
+}
+.dropdown li:hover .material-icons{
+    /*font-size: 31px;
+    margin-top: -1px;
+    margin-left: -1px;*/
+}
+@media screen and (max-width: 1100px){
+    header h1{
+        width:100%;
+        font: 20px "Roboto", sans-serif;
+        text-align: center;
+        margin-left: 0;
+        margin-top: 15px;
+    }
+    header h1 a{
+        font-size: 25px;
+    }
+    header img{
+        display:none;
+    }
+    nav{
+        width:100%;
+        text-align: center;
+        margin-top: 16px;
+        display:block;
+    }
+    nav li a{
+        font-size: 20px;
+    }
+    nav ul{
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-top: -30px;
+        float: none;
+    }
+    nav li{
+        display: inline;
+        text-align: center;
+        margin-right:14px;
+        float: none;
+    }
+    .dropdown{
+        left: 50%;
+        top: 76px;
+        margin-left: -100px;
+        right: auto;
+    }
+    #extensionlink{
+        display:none;
+    }
+}
